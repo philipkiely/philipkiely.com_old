@@ -18,8 +18,12 @@
   background-color: #e0e0eb;
   border: none;
 }
-#cat-image {
+#main-image {
   max-width: 100%;
   height: auto;
+  border-radius: 4px;
+}
+#right-header {
+  background-color: #ccffcc;
   border-radius: 4px;
 }
