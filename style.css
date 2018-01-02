@@ -71,3 +71,7 @@
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
+
+#resume-link {
+    color: black;
+}
