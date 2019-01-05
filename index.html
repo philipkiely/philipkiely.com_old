@@ -284,11 +284,14 @@
 </div>
 <footer>
   <div class="text-center">
-    <p>&copy; 2018 Philip Kiely</p>
+    <p>&copy; <span id="year">2018</span> Philip Kiely</p>
     <p>Built with <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted for free by <a href="https://pages.github.com">GitHub Pages</a>.</p>
     <p><a href="/blank/">This page intentionally left blank</p>
   </div>
 </footer>
+<script>
+document.getElementById("year").innerHTML = (new Date()).getFullYear();
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
