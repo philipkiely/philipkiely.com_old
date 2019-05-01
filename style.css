@@ -2,6 +2,13 @@
     border-radius: 50%;
 }
 
+@media only screen and (min-width: 768px) {
+    #headline_image {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 .blue-text {
     color: lightblue;
 }
