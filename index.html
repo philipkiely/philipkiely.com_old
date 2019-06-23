@@ -36,13 +36,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/">Main</a>
+        <a class="nav-link active" href="/">Main</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/portfolio/">Portfolio</a>
+        <a class="nav-link" href="https://github.com/philipkiely">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/blog/">Blog</a>
+        <a class="nav-link" href="/essays/">Essays</a>
       </li>
     </ul>
     <ul class="nav navbar-nav ml-auto">
@@ -79,15 +79,21 @@
     <div class="col-md-6 order-md-1">
       <div class="p-5">
         <h2 class="primary-accent-text">Hello, I'm Philip Kiely</h2>
-        <p>This website presents my <a href="/blog">writing</a>, <a href="/portfolio">projects</a>, and <a href="http://youtube.kiely.xyz">life</a>.</p>
+        <p>This website presents my <a href="/essays">writing</a>, <a href="/portfolio">projects</a>, and <a href="http://youtube.kiely.xyz">life</a>.</p>
         <p>Sign up for my email newsletter for fresh, original content on programming, technology, and business delivered to your inbox weekly.</p>
-        <form>
+        <form onsubmit="emailListSignup();return false;">
           <div class="form-row">
+            <div id="invalid-email" class="alert alert-danger col-sm-12" role="alert" hidden>
+                Please enter a valid email.
+            </div>
+            <div id="valid-email" class="alert alert-success col-sm-12" role="alert" hidden>
+                Registration sent!
+            </div>
             <div class="col-sm-12 col-md-9 mb-2 mb-md-0">
-              <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+              <input type="email" class="form-control form-control-lg" id="get-email" placeholder="Enter your email...">
             </div>
             <div class="col-sm-12 col-md-3">
-              <button type="submit" class="btn btn-block btn-lg btn-primary disabled">Soon</button>
+              <button type="submit" class="btn btn-block btn-lg btn-primary">Sign Up!</button>
             </div>
           </div>
         </form>
@@ -102,9 +108,9 @@
 <div class="col-md-4">
   <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
     <div class="col-md-6 col-12">
-        <a href="/blog"><img class="img-fluid" src="img/undraw_on_the_office_fbfs.svg" alt="Philip Kiely"></a>
+        <a href="/essays"><img class="img-fluid" src="img/undraw_on_the_office_fbfs.svg" alt="Philip Kiely"></a>
     </div>
-    <h3><a href="/blog">Articles</a></h3>
+    <h3><a href="/essays">Articles</a></h3>
     <p class="lead mb-0">
     <ul>
         <li><a href="https://blog.floydhub.com/introduction-to-genetic-algorithms/"><p class="lead mb-0">Introduction to Genetic Algorithms</p></a></li>
@@ -137,15 +143,15 @@
 </div>
 </div><!--Showcase-->
 <hr>
-<div class="row"><!--Blog-->
+<div class="row"><!--Essays-->
 <div class="col-12">
-<h1 class="primary-accent-text">Blog</h1>
+<h1 class="primary-accent-text">Essays</h1>
 <p>Coming Soon!</p>
 </div>
 <div class="col-12 col-md-4">
-<h3><a class="btn btn-primary" href="/blog/">Complete Blog</a></h3>
+<h3><a class="btn btn-primary" href="/essays/">Complete Archive</a></h3>
 </div>
-</div><!--Blog-->
+</div><!--Essays-->
 <div class="row"><!--Resume-->
 <div class="col-12">
 <hr>
@@ -183,7 +189,7 @@
 </div><!--container-->
 <footer class="py-5 bg-dark main-footer">
   <div class="container">
-    <p class="text-center white-text">philipkiely.com V3beta | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a></p>
+    <p class="text-center white-text">philipkiely.com V3 | Proudly Handcrafted Since 2017 | <a href="/old/V2/index.html">V2</a> | <a href="/old/V1/index.html">V1</a> | <a href="/old/V0/index.html">V0</a></p>
     <p class="text-center white-text">Built with <a href="https://getbootstrap.com">Bootstrap</a>, <a href="http://fontawesome.io">Font Awesome</a>, and <a href="https://fonts.google.com">Google Fonts</a>. Hosted for free with <a href="https://pages.github.com">GitHub Pages</a>.</p>
     <h5 class="text-center">
     <a target="_blank" href="http://youtube.kiely.xyz" class=""><i class="fab fa-youtube red-text"></i></a>
